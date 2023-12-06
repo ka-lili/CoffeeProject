@@ -95,3 +95,36 @@ sub{
     }
 
 
+    #reservation {
+        text-align: center;
+        padding: 20px;
+        background-color: #f0f0f0;
+    }
+    
+    #reservation h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    form {
+        display: inline-block;
+        text-align: left;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info input,
+    .info button {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        box-sizing: border-box;
+    }
+    
+    /* Additional styling as needed */
+    
+
