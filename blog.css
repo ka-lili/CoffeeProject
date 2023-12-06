@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.blog {
+    position: relative;
+    height: 400px; /* Adjust the height as needed */
+    background: url('images/background.jpg') center top no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: left;
+    padding: 20px; /* Add padding as needed */
+}
+
+.img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.blog h1, ul {
+    margin: 0;
+    padding: 0;
+    display: inline-flex; /* Set display property to inline-block */
+}
+
+.blog h1 {
+    font-size: 2em;
+    
+   padding: 100px;
+}
+
+.blog ul {
+    list-style: none;
+}
+
+.blog ul li {
+    display: inline-block;
+    padding:  50px 0;
+    padding-left: 20px;
+}
+
+.blog ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*------------------blog-details styles----------------------------------------------*/
+.blog_details{
+    display: flex;
+    margin: 120px;
+    gap: 40px;
+
+}
+.sec2 ul li{
+    text-decoration: none;
+    padding: 15px;
+
+}
+
+/* block part  */
+
+blockquote {
+    position: relative;
+    background-color: brown; /* Change the background color as needed */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+blockquote i {
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+blockquote h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+/*categories part*/
+.Catagories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.category-box {
+    flex: 0 0 48%; /* Adjust the width of each box as needed */
+    background-color: #f8f8f8; /* Change the background color as needed */
+    margin: 0 0 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.ul_li_block {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ul_li_block li {
+    border-bottom: 1px solid #ddd; /* Add border as needed */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul_li_block a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.ul_li_block span {
+    margin-right: 10px;
+}
+
+.fal.fa-angle-double-right {
+    margin-right: 5px;
+    color: #4CAF50; /* Change the icon color as needed */
+}
+/*showcase*/
+.showcase {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.showcaseHead {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ul_li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ul_li li {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.ul_li li:hover {
+    transform: scale(1.05);
+}
+
+/* .popup_image {
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+} */
+
+.popup_image img {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+    
+/*comment part*/
+.wrap_space {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.area_title {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form_item {
+    margin-bottom: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
