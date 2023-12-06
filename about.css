@@ -1,5 +1,8 @@
 body{
-    background-color: beige;
+    background-color: rgb(44, 44, 42);
+    color: white;
+    opacity: 0.6;
+    
 }
 
    #about {
@@ -14,11 +17,13 @@ body{
   h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    font: white;
   }
   
   p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    font: white;
     
   }
   
