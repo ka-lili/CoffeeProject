@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color:#eceae3;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+    padding: 10px;
+}
+.container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.container li {
+    margin-right: 10px;
+}
+.button1 {
+    background-color: white;
+    color: rgb(24, 23, 23);
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.items-container {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    margin-top: 27px;
+    gap: 101px;
+}
+.images {
+    margin-right: 20px; /* Adjust as needed for spacing between image and text */
+}
+.text {
+    flex-grow: 1;
+    max-width: 400px; /* Adjust the maximum width of the paragraph */
+}
+ .text h3 {
+        margin-top: 22px;
+        margin-left: 9px;
+    }
+.text p {
+    margin-bottom: 69px;
+    margin-left: 6px;
+}
+.content-col {
+    text-align: right; /* Align the price to the right */
+}
+/* Additional styling as needed */
+.content-col .item-price {
+    display: block;
+    line-height: 1;
+    font-size: 60px;
+    color: #C7A17A;
+    font-family: "Oswald", sans-serif;
+   padding: 17px 55px 10px 70px;
+    border-left: 2px solid #ECEAE3;
+}
+sub{
+        /* bottom: 0px; */
+         bottom: 0px;
+        font-size: 18px;
+        color: #1B1B1B;
+    }
+    #reservation {
+        text-align: center;
+        padding: 20px;
+        background-color: #F0F0F0;
+    }
+    #reservation h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    form {
+        display: inline-block;
+        text-align: left;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info input, .info button {
+        border-radius: 6px;
+        width: 329%;
+        border: navajowhite;
+        padding: 30px;
+        margin: 5px 0;
+        box-sizing: border-box;
+    }
+    /* Additional styling as needed */
+   .btni{
+    border-radius: 6px;
+    width: 329%;
+    border: navajowhite;
+    padding: 30px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    background-color: #C7A17A;
+   }
