@@ -8,6 +8,7 @@ body{
     background-image: url("image/new.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    color: red;
 }
 nav{
     display: flex;
