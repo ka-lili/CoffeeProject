@@ -3,158 +3,61 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
     background-image: url("image/new.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-nav{
-    display: flex;
-    flex-direction: row;
-    padding-left: 4em;
-    background-color: black;
     width: 100%;
-    height: 4em;
-    position: fixed;
 }
-nav ul{
+header{
+    display: flex;
+    background-color: black;
+    padding: 2%;
+}
+
+nav {
+    flex-direction: row;
+    padding-left: 4%;
+    width: 100%;
+    left: 0px;
+    position: fixed;
+   
+   
+}
+ nav ul{
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 5em;
-    margin-left: 10em;
-    margin-top: 1em;
+    gap: 12%;
+    margin-left: 53%;  
 }
-
+.style-h2{
+    color: white;
+    font-size: 27px;
+}
+ nav ul li{
+    list-style-type: none;
+    padding-bottom: 4%;
+}
 nav ul li a{
     text-decoration: none;
     color: white;
     opacity: 0.8;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 300;
     
 }
+
 nav ul li a:hover{
     color: chocolate;
-}
-nav h3{
-    margin-left: 10em;
-    margin-top: 14px;
-    color: white;
-    opacity: 0.8;
-    font-weight: 500;
-}
-nav h3:hover{
-    color: chocolate;
-    
-}
-nav h2{
-    margin-top: 0.5em;
-    color: white;
-    border-radius: 5px;
-    padding-top: 6px;
-    font-weight: 800;  
-}
+} 
 
-
-
-
-
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color:#eceae3;
-    
-}
-
-.main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 10px;
-}
-
-.container ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.container li {
-    margin-right: 10px;
-}
-
-.button1 {
-    background-color: white;
-    color: rgb(24, 23, 23);
-    border: none;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-.items-container {
-    display: flex;
-    align-items: flex-start;
-    background-color: white;
-    margin-top: 27px;
-    gap: 101px;
-}
-
-.images {
-    margin-right: 20px; /* Adjust as needed for spacing between image and text */
-}
-
-.text {
-    flex-grow: 1;
-    max-width: 400px; /* Adjust the maximum width of the paragraph */
-}
-
-
- .text h3 {
-        margin-top: 22px;
-        margin-left: 9px;
-    }
-
-
-
-.text p {
-    margin-bottom: 69px;
-    margin-left: 6px;
-}
     
 
-.content-col {
-    text-align: right; /* Align the price to the right */
-}
 
 
-
-
-.content-col .item-price {
-    display: block;
-    line-height: 1;
-    font-size: 60px;
-    color: #c7a17a;
-    font-family: "Oswald", sans-serif;
-   padding: 17px 55px 10px 70px;
-    border-left: 2px solid #eceae3;
-}
-
-sub{
-   
-        bottom: 0px;
-        font-size: 18px;
-        color: #1B1B1B;
-    }
 
 
 
