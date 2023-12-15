@@ -15,7 +15,7 @@
 
 <body>
     <!-- -------------Blog part------------------------ -->
-    <section>
+    <section class="blog-sec">
         <div class="container">
             <div class="blog">
                 <img class="img1" src="images/new back.jpg" alt="">
@@ -29,7 +29,7 @@
 
 
             <!-------------section two which contain images and descriptions------>
-
+<div class="cont1">
             <div class="blog_details">
                 <div class="first">
 
@@ -79,17 +79,18 @@
                 <img src="images/sister.jpg" alt="">
                 <div class="wrap_space">
                     <p>
-                        Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna a liqua. Ut enim ad minim veniam, quis nostrud exerc itaullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.ea commodo consequaty.
+                        Emily's eyes sparkle with a combination of caffeine-induced energy and genuine contentment. As 
+                        she takes a sip, there's a moment of pure bliss, and you can almost see the stress of the day melting away. 
+                        Her posture relaxes, and a subtle sigh of
+                         satisfaction escapes her lips, echoing the pleasure derived from the comforting warmth of the coffee.
                     </p>
                     <br>
                     <p>
-                        Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna a liqua. Ut enim ad minim veniam, quis nostrud exerc itaullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.ea commodo consequaty.Rorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna a liqua. Ut enim ad minimy.
+                        Whether she's enjoying the solitude of a quiet morning or sharing a laughter-filled
+                         conversation with friends at a cozy café, Emily's love for coffee is evident in the way 
+                         she savors each moment. The coffee cup becomes a vessel of happiness, and Emily, a connoisseur of joy,
+                          embraces the simple pleasures that a perfect cup of coffee brings to her life. 
+                        It's more than just a beverage; it's a ritual that adds a touch of magic to her day.
                     </p>
                 </div>
 
@@ -144,25 +145,25 @@
                     <!-----------------------comment form----------------------------->
 
                     <div class="wrap_space">
-                        <h3 class="area_title text-uppercase">Leave Your comment</h3>
-                        <form action="#">
+                        <h3 class="area_title text-uppercase">Leave Your Comment</h3>
+                        <form id="comment-form">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form_item">
-                                        <input type="text" name="name" placeholder="Your Name:">
+                                        <input type="text" name="name" placeholder="Your Name:" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form_item">
-                                        <input type="email" name="email" placeholder="Your Mail:">
+                                        <input type="email" name="email" placeholder="Your Email:" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="form_item">
-                                <textarea name="message" placeholder="Enter Your Massage :"></textarea>
+                                <textarea name="message" placeholder="Enter Your Message:" required></textarea>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn_primary text-uppercase">Send Massage</button>
+                                <button type="submit" class="btn btn_primary text-uppercase">Post Comment</button>
                             </div>
                         </form>
                     </div>
@@ -300,6 +301,7 @@
                     </div>
                 </div>
                 </div>
+            </div>
 
             </div>
         </div>
