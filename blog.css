@@ -2,16 +2,32 @@
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
 }
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #645e5e; /* Replace with your desired color code */
+        z-index: -1;
+      }
+      
+/* .blog-sec{
+    padding: 0 20%;
+} */
 
 .blog {
     position: relative;
-    height: 400px; /* Adjust the height as needed */
-    background: url('images/background.jpg') center top no-repeat;
+    height: 600px; 
     background-size: cover;
     color: white;
     text-align: left;
-    padding: 20px; /* Add padding as needed */
+    padding: 40px; 
+    
 }
 
 .img1 {
@@ -19,122 +35,321 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 120%;
     object-fit: cover;
     z-index: -1;
 }
-.blog h1, ul {
-    margin: 0;
-    padding: 0;
-    display: inline-flex; /* Set display property to inline-block */
-}
-
 .blog h1 {
-    font-size: 2em;
-    
-   padding: 100px;
+    font-size: 4em;
+    padding: 300px 100px 0 100px;
+    cursor: pointer;
 }
 
 .blog ul {
     list-style: none;
+    margin-left: 100px;
+    font-size: 1.5em;
 }
 
 .blog ul li {
     display: inline-block;
-    padding:  50px 0;
-    padding-left: 20px;
+    padding: 20px 0 0 0;
+    cursor: pointer;
+    
+    
+}
+.blog ul li span{
+    color: #c7a17a;
+    transition: .5s ease;
 }
 
 .blog ul li a {
     color: white;
     text-decoration: none;
 }
+.blog ul li a:hover{
+    color: #c7a17a;
+    
+}
+
 
 /*------------------blog-details styles----------------------------------------------*/
+.cont1{
+    display: flex;
+    padding: 150px;
+}
+
 .blog_details{
     display: flex;
-    margin: 120px;
     gap: 40px;
+    padding-top: 100px;
+    
 
 }
-.sec2 ul li{
-    text-decoration: none;
-    padding: 15px;
+/*----- to give first and sec part background*/
+.first{
+    background: rgb(179, 169, 169);
+    background-attachment: fixed;
+    list-style-position: fixed;
+    /* width: 50%; */
 
+}
+
+
+/*----  first part of first div ----------------------*/
+.sec2 img{
+    height: 60%;
+    width: 100%;
+}
+.sec2 ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.sec2 li {
+    margin-right: 20px; 
+}
+
+.sec2 a {
+    text-decoration: none;
+    color: #000; 
+}
+
+.sec2 i {
+    margin-right: 5px; 
+}
+
+/*------------------word section--------------------*/
+.word h2{
+    font-size: 1.5em;
+    padding: 5px 20px;
+}
+.word p{
+    padding: 20px 20px;
+    font-style: italic;
+    word-spacing: 2;
+    font-size: 1.2em;
+    color: #393737;
+}
+.word img{
+    padding: 10px 0;
+    height: 60%;
+    width: 100%;
 }
 
 /* block part  */
 
 blockquote {
     position: relative;
-    background-color: rgb(118, 104, 104); /* Change the background color as needed */
+    background-color: #3c1f03;; /* Change the background color as needed */
     color: white;
     padding: 20px;
     border-radius: 8px;
     margin: 20px 0;
+    font-style: helvetica;
 }
 
 blockquote i {
-    font-size: 24px;
-    color: white;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    padding: 20px 20px 20px 300px;
+    width: 20px;
+    height: 30px;
 }
 
 blockquote h4 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 1.5;
-}
-/*categories part*/
-.Catagories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.category-box {
-    flex: 0 0 48%; /* Adjust the width of each box as needed */
-    background-color: #f8f8f8; /* Change the background color as needed */
-    margin: 0 0 20px;
+    font-style: italic;
+    font-size: 1em;
+    word-spacing: 2px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
+    
 }
 
-.ul_li_block {
+/*.................................categories part......................*/
+/* Style the wrapper */
+/* .wrap_space {
+    max-width: 800px;
+    margin: 20px auto;
+} */
+
+/* Style the comment area */
+.comment_area {
+    
+    padding: 20px;
+}
+
+/* Style the comment list */
+.comment_list {
     list-style: none;
-    margin: 0;
     padding: 0;
 }
 
-.ul_li_block li {
-    border-bottom: 1px solid #ddd; /* Add border as needed */
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Style each comment */
+.comment_list > li {
+    margin-bottom: 20px;
 }
 
+/* Style comment thumbnail */
+.comment_thumbnail {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.comment_thumbnail img {
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+}
+
+/* Style comment content */
+.comment_content {
+    flex: 1;
+}
+
+.comment_name {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.comment_date {
+    color: #777;
+}
+
+.comment_content p {
+    margin-bottom: 10px;
+}
+
+.reply_btn {
+    color: black;
+    text-decoration: none;
+}
+
+/* Nesting for nested comments */
+.comment_list ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+
+
+/*.................start of sec2 part....................*/
+.second{
+    
+    width: 25%; /* Set your desired minimum width */
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+   
+}
+/*............search part................*/
+
+/* .search {
+    padding: 20px;
+    
+    width: 100%;
+    background-color: rgb(179, 169, 169);
+    
+   
+} */
+.search h3{
+    font-size: 1.5em;
+    padding: 20px 0 0px 20px ;
+    color: black;
+}
+.search form{
+    padding: 10px 20px;
+}
+/* Apply relative positioning to the input container */
+.input {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the search input */
+#input {
+    padding: 8px 30px 8px 8px; /* Adjust padding to make space for the icon */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+/* Style the search icon */
+#input i {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/*..............categories part....................*/
+/* Style the Categories container */
+.Catagories {
+    margin-top: 20px;
+    background-color: rgb(179, 169, 169);
+    padding: 20px;
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the Categories title */
+.Catagories h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Style the Categories list */
+.ul_li_block {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style each category item */
+.ul_li_block li {
+    margin-bottom: 10px;
+}
+
+/* Style the category link */
 .ul_li_block a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
     color: #333;
-    display: flex;
-    align-items: center;
+    transition: background-color 0.3s;
 }
 
-.ul_li_block span {
+/* Add hover effect to category link */
+.ul_li_block a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Style the category icon */
+.ul_li_block a i {
     margin-right: 10px;
+    color: #ab5e12; /* Set the color for the icon */
 }
 
-.fal.fa-angle-double-right {
+/* Style the category name and count spans */
+.ul_li_block a span {
     margin-right: 5px;
-    color: #4CAF50; /* Change the icon color as needed */
 }
-/*showcase*/
+
+/* Style the category count span */
+.ul_li_block a span:last-child {
+    color: #777;
+}
+
+
+/*........................showcase.................*/
+
 .showcase {
     background-color: #fff;
     border-radius: 8px;
@@ -151,7 +366,7 @@ blockquote h4 {
     text-align: center;
 }
 
-.ul_li {
+.ul_li li{
     list-style: none;
     margin: 0;
     padding: 0;
@@ -161,8 +376,9 @@ blockquote h4 {
 }
 
 .ul_li li {
-    width: calc(33.33% - 20px);
+    /* width: calc(33.33% - 20px); */
     margin-bottom: 20px;
+    display: flex;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -173,19 +389,16 @@ blockquote h4 {
     transform: scale(1.05);
 }
 
-/* .popup_image {
-    display: block;
-    overflow: hidden;
-    border-radius: 8px;
-} */
+
 
 .popup_image img {
-    width: 50%;
-    height: auto;
+    width: 150px;
+    
+    height: 70px;
     display: block;
 }
     
-/*comment part*/
+/*.............................comment part.......................*/
 .wrap_space {
     padding: 20px;
     background-color: #f8f8f8;
@@ -221,7 +434,7 @@ textarea {
 
 button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
     border: none;
     border-radius: 4px;
@@ -230,7 +443,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: rgb(105, 43, 43);
 }
 
 .text-center {
