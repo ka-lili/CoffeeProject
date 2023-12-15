@@ -37,6 +37,13 @@ body {
     cursor: pointer;
 }
 
+.button1 :hover{
+    background-color: #2814c2;
+    color: #c7a17a;
+   }
+    
+
+
 .items-container {
     display: flex;
     align-items: flex-start;
@@ -87,9 +94,7 @@ body {
 
 sub{
    
-        /* bottom: 0px; */
          bottom: 0px; 
-
         font-size: 18px;
         color: #1B1B1B;
     }
@@ -105,26 +110,52 @@ sub{
         font-size: 24px;
         margin-bottom: 20px;
     }
-    
-    form {
-        display: inline-block;
-        text-align: left;
+    input {
+        width: 471px;
     }
     
     .info {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+        width: 100%;
+    }
+    .input1 {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
     
-    .info input,
-    .info button {
-        width: 100%;
-        padding: 10px;
-        margin: 5px 0;
+    .info input {
+        border-radius: 6px;
+        border: navajowhite;
+        padding: 30px;
+        margin: 6px 0;
         box-sizing: border-box;
     }
     
     /* Additional styling as needed */
+
+   .btni{
+    border-radius: 6px;
+    border: navajowhite;
+    padding: 30px;
+    color: white;
+    margin: 5px 0;
+    box-sizing: border-box;
+    background-color: #c7a17a;
+    cursor: pointer;
+   }
+
+   .btni :hover{
+   }
+
+   .infom{
+    background-color: aliceblue;
+    align-items: center;
+   }
     
 
